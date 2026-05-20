@@ -1,0 +1,146 @@
+organization:
+  name: "蓝海智询"
+  logo: "/favicon.svg"
+  avatar: "/avatar.jpg"
+  login_bg: "/login-bg.jpg"
+
+branding:
+  name: "BlueOcean IQ"
+  title: "蓝海智询：鱼类知识图谱与智能问答平台"
+  subtitle: "面向鱼类知识组织、RAG 检索增强、向量索引管理与可解释问答的一体化前端工作台"
+  description: "平台聚合鱼类物种、海域生态、养殖病害、饵料营养与检测标准等知识资产，通过图谱、向量检索和问答编排提供统一入口。"
+
+features:
+  - label: "图谱底座"
+    value: "鱼类关系网络"
+    description: "物种、海域、病害、饵料与检测指标统一进图，突出知识关联能力。"
+    icon: "stars"
+  - label: "RAG 能力"
+    value: "检索增强问答"
+    description: "向量召回、证据排序、片段引用与回答编排可在同一工作台上联动呈现。"
+    icon: "resolved"
+  - label: "索引体系"
+    value: "向量库与命名空间"
+    description: "支持多知识域分仓、过滤、版本切换与召回对比展示。"
+    icon: "commits"
+  - label: "平台形态"
+    value: "模块化工作台"
+    description: "以模块化前端形态组织鱼类知识平台，便于统一呈现图谱、检索与问答能力。"
+    icon: "license"
+
+themes:
+  - id: "fish-atlas"
+    name: "鱼类知识图谱"
+    subtitle: "Species Atlas"
+    description: "围绕鱼种分类、海域分布、形态特征、养殖环境与病害风险组织知识主线，作为平台的核心知识图谱模块。"
+    status: "Featured Module"
+    featured: true
+    entry_route: "/themes/fish-atlas"
+    tags:
+      - "物种画像"
+      - "海域分布"
+      - "病害预警"
+      - "关系图谱"
+    highlights:
+      - "以鱼种主线串联分类学、海域分布、体态特征与养殖知识。"
+      - "支持在主题详情、知识路径工作台与图谱入口之间保持同一上下文。"
+      - "集中体现鱼类知识图谱、证据卡片与知识关系组织能力。"
+    context:
+      theme: "fish-atlas"
+      module: "fish-atlas"
+      scene: "overview"
+      version: "blueocean-v1"
+    links:
+      docs: "https://github.com/GodCzy/buleocean"
+    entry_points:
+      - name: "模块总览"
+        type: "route"
+        route: "/themes/fish-atlas"
+      - name: "知识路径工作台"
+        type: "route"
+        route: "/knowledge/fish-atlas"
+      - name: "产品仓库"
+        type: "link"
+        url: "https://github.com/GodCzy/buleocean"
+  - id: "rag-lab"
+    name: "RAG 检索工作台"
+    subtitle: "RAG Flow"
+    description: "围绕查询改写、向量召回、证据融合、答案落地与可解释引用组织前端流程视图，突出智能问答能力。"
+    status: "Knowledge Flow"
+    featured: false
+    entry_route: "/themes/rag-lab"
+    tags:
+      - "检索策略"
+      - "证据融合"
+      - "引用落地"
+      - "问答编排"
+    highlights:
+      - "把用户问题拆成检索路径、候选证据与回答模板三层结构。"
+      - "保留证据链、召回命中和回答 grounding 说明。"
+      - "把鱼类知识库组织成可追溯、可继续追问的问答结果。"
+    context:
+      theme: "rag-lab"
+      module: "rag-lab"
+      scene: "overview"
+      version: "blueocean-v1"
+    links:
+      docs: "https://github.com/GodCzy/buleocean"
+    entry_points:
+      - name: "模块总览"
+        type: "route"
+        route: "/themes/rag-lab"
+      - name: "知识路径工作台"
+        type: "route"
+        route: "/knowledge/rag-lab"
+      - name: "产品仓库"
+        type: "link"
+        url: "https://github.com/GodCzy/buleocean"
+  - id: "vector-vault"
+    name: "向量索引中心"
+    subtitle: "Vector Vault"
+    description: "围绕向量库命名空间、多模态入库、召回评估和元数据过滤组织平台能力，强调底层检索基础设施的可管理性。"
+    status: "Infrastructure View"
+    featured: false
+    entry_route: "/themes/vector-vault"
+    tags:
+      - "Milvus"
+      - "命名空间"
+      - "向量过滤"
+      - "召回评测"
+    highlights:
+      - "把向量集合、命名空间、Embedding 模型和元数据过滤组织成清晰的前端视图。"
+      - "说明蓝海智询如何管理鱼类知识库的向量化资产。"
+      - "突出向量数据库与问答上层之间的衔接关系。"
+    context:
+      theme: "vector-vault"
+      module: "vector-vault"
+      scene: "overview"
+      version: "blueocean-v1"
+    links:
+      docs: "https://github.com/GodCzy/buleocean"
+    entry_points:
+      - name: "模块总览"
+        type: "route"
+        route: "/themes/vector-vault"
+      - name: "知识路径工作台"
+        type: "route"
+        route: "/knowledge/vector-vault"
+      - name: "产品仓库"
+        type: "link"
+        url: "https://github.com/GodCzy/buleocean"
+
+actions:
+  - name: "产品仓库"
+    icon: "github"
+    url: "https://github.com/GodCzy/buleocean"
+  - name: "模块总览"
+    icon: "docs"
+    url: "/themes"
+  - name: "图谱工作台"
+    icon: "route"
+    url: "/knowledge/fish-atlas"
+
+footer:
+  copyright: "© 蓝海智询 2026"
+  user_agreement_url: "/protocols/user-agreement.template.html"
+  privacy_policy_url: "/protocols/privacy-policy.template.html"
